@@ -13,7 +13,7 @@
 <meta property="og:url" content="http://yoursite.com/2018/10/28/new-start/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="title: new start…date: 2018-10-28 15:58:04 tags:拖了整个学期，还是决定要开始写博客啦小伙伴一直催我赶紧开始写博客，正好最近很懒，开始写博客也算是督促自己吧，，，最近的极客大挑战快要结束了，这算是自己真正意义上第一次出题吧，一道杂项和一道WEB，虽然XSSBOT最后的成品环境很容易崩，但还是准备以这次出题经历为起点开始写博客，顺便也可以写一下自己做其">
-<meta property="og:updated_time" content="2018-10-28T17:48:42.593Z">
+<meta property="og:updated_time" content="2019-04-09T05:39:38.393Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
 <meta name="twitter:description" content="title: new start…date: 2018-10-28 15:58:04 tags:拖了整个学期，还是决定要开始写博客啦小伙伴一直催我赶紧开始写博客，正好最近很懒，开始写博客也算是督促自己吧，，，最近的极客大挑战快要结束了，这算是自己真正意义上第一次出题吧，一道杂项和一道WEB，虽然XSSBOT最后的成品环境很容易崩，但还是准备以这次出题经历为起点开始写博客，顺便也可以写一下自己做其">
@@ -78,7 +78,10 @@
         <hr>
 <p>title: new start…<br>date: 2018-10-28 15:58:04</p>
 <h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><h2 id="拖了整个学期，还是决定要开始写博客啦"><a href="#拖了整个学期，还是决定要开始写博客啦" class="headerlink" title="拖了整个学期，还是决定要开始写博客啦"></a>拖了整个学期，还是决定要开始写博客啦</h2><p>小伙伴一直催我赶紧开始写博客，正好最近很懒，开始写博客也算是督促自己吧，，，<br>最近的极客大挑战快要结束了，这算是自己真正意义上第一次出题吧，一道杂项和一道WEB，虽然XSSBOT最后的成品环境很容易崩，但还是准备以这次出题经历为起点开始写博客，顺便也可以写一下自己做其他小伙伴的题目收获到的东西</p>
-
+<h2 id="XSS题目"><a href="#XSS题目" class="headerlink" title="XSS题目"></a>XSS题目</h2><p>有以下几个难点：</p>
+<h3 id="1-后台机器人的制作"><a href="#1-后台机器人的制作" class="headerlink" title="1.后台机器人的制作"></a>1.后台机器人的制作</h3><p>  要用无头浏览器搭配selenuim框架模拟后台管理员查看页面的动作（以此来触发攻击者的PAYLOAD给他们弹回去COOKIE）使用python的selenium库来写</p>
+<p>   selenuim支持的常见webdriver有chrome webdriver、firefox webdirver、PhantomJS，，本来是准备用phantomJS（因为它不用安装对应浏览器，其他两个要在系统环境里安装浏览器才可以）的，但发现一个坑点，比较新的PY库selenium版本已经不支持这个无头浏览器了，最后决定使用firefox的无头浏览器</p>
+<h3 id="2-留言的存储和展示（给机器人）"><a href="#2-留言的存储和展示（给机器人）" class="headerlink" title="2.留言的存储和展示（给机器人）"></a>2.留言的存储和展示（给机器人）</h3><h3 id="3-环境的配置做成dockerfile"><a href="#3-环境的配置做成dockerfile" class="headerlink" title="3.环境的配置做成dockerfile"></a>3.环境的配置做成dockerfile</h3>
       
     </div>
     <footer class="article-footer">
