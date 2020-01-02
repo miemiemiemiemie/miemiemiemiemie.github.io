@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="计网第一章第二章第三章第四章第五章 运输层概述进程间通信运输层的一个很重要的功能就是 ‘复用’ 和 ‘分用’ 。应用层不同进程的报文通过不同的端口向下交到运输层，再往下就共用网络层提供的服务。 两个主机进行通信实际上就是两个主机中的应用进程互相通信。  应用进程之间的通信又称为端到端的通信。  “运输层提供应用进程间的逻辑通信”。 两个主要协议 用户数据报协议UDP 一条不可靠信道  传输控制协议">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2019/06/08/jiw/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="计网第一章第二章第三章第四章第五章 运输层概述进程间通信运输层的一个很重要的功能就是 ‘复用’ 和 ‘分用’ 。应用层不同进程的报文通过不同的端口向下交到运输层，再往下就共用网络层提供的服务。 两个主机进行通信实际上就是两个主机中的应用进程互相通信。  应用进程之间的通信又称为端到端的通信。  “运输层提供应用进程间的逻辑通信”。 两个主要协议 用户数据报协议UDP 一条不可靠信道  传输控制协议">
+<meta property="og:updated_time" content="2019-06-08T14:33:01.318Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="计网第一章第二章第三章第四章第五章 运输层概述进程间通信运输层的一个很重要的功能就是 ‘复用’ 和 ‘分用’ 。应用层不同进程的报文通过不同的端口向下交到运输层，再往下就共用网络层提供的服务。 两个主机进行通信实际上就是两个主机中的应用进程互相通信。  应用进程之间的通信又称为端到端的通信。  “运输层提供应用进程间的逻辑通信”。 两个主要协议 用户数据报协议UDP 一条不可靠信道  传输控制协议">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+	<!-- If needed, replace your own web font service -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700" rel="stylesheet">
+
+  
+   
+  <link rel="stylesheet" href="/icomoon/style.css">
+  <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+  <div class="site-wrapper">
+    <div id="loading-bar-wrapper">
+  <div id="loading-bar"></div>
+</div>
+<script>document.getElementById("loading-bar").style.width="20%";</script>
+
+
+<header id="header" class="site-header clearfix">
+
+  <a class="logo square clearfix" href="/">
+    <!-- 
+      Replace with your own size name, for example:
+      <span class="b">A</span>
+      <span class="w">B</span>
+      <span class="b">C</span>
+     -->
+    
+      <span class="b">
+        H
+      </span>
+    
+      <span class="w">
+        e
+      </span>
+    
+      <span class="b">
+        x
+      </span>
+    
+      <span class="w">
+        o
+      </span>
+    
+  </a>
+  <a class="me square site-nav-switch clearfix">
+    <span class="b">
+    	<span class="icon icon-menu"></span>
+    </span>
+  </a>
+
+</header>
+
+    <script>document.getElementById("loading-bar").style.width="40%";</script>
+    <main id="main" class="clearfix">
+      <article id="post-jiw"
+  class="article white-box article-type-post"
+  itemscope itemprop="blogPost">
+
+  <header class="article-header">
+    <h1 class="article-title" itemprop="name">
+      
+    </h1>
+    <div class="article-meta">
+      Posted on 
+      <time class="article-time" datetime="2019-06-08T14:33:01.307Z" itemprop="datePublished">
+        Jun 8, 2019
+      </time>
+    </div>
+  </header>
+
+  <div class="article-entry" itemprop="articleBody">
+    <h1 id="计网"><a href="#计网" class="headerlink" title="计网"></a>计网</h1><h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><h2 id="第三章"><a href="#第三章" class="headerlink" title="第三章"></a>第三章</h2><h2 id="第四章"><a href="#第四章" class="headerlink" title="第四章"></a>第四章</h2><h2 id="第五章-运输层"><a href="#第五章-运输层" class="headerlink" title="第五章 运输层"></a>第五章 运输层</h2><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><h4 id="进程间通信"><a href="#进程间通信" class="headerlink" title="进程间通信"></a>进程间通信</h4><p>运输层的一个很重要的功能就是 ‘复用’ 和 ‘分用’ 。应用层不同进程的报文通过不同的端口向下交到运输层，再往下就共用网络层提供的服务。</p>
+<p>两个主机进行通信实际上就是两个主机中的应用进程互相通信。 </p>
+<p>应用进程之间的通信又称为端到端的通信。 </p>
+<p>“运输层提供应用进程间的逻辑通信”。</p>
+<h4 id="两个主要协议"><a href="#两个主要协议" class="headerlink" title="两个主要协议"></a>两个主要协议</h4><p> 用户数据报协议UDP 一条不可靠信道</p>
+<p> 传输控制协议TCP 全双工的可靠信道</p>
+<h4 id="端口"><a href="#端口" class="headerlink" title="端口"></a>端口</h4><p>IP地址+端口号——唯一标识进程</p>
+<p>三类端口<br>1熟知端口<br>2登记端口号——在IANA登记<br>3客户端口号或短暂端口号</p>
+<h3 id="UDP详解"><a href="#UDP详解" class="headerlink" title="UDP详解"></a>UDP详解</h3><h4 id="主要特点"><a href="#主要特点" class="headerlink" title="主要特点"></a>主要特点</h4><p>UDP 是无连接的，即发送数据之前不需要建立连接。</p>
+<p>UDP 使用尽最大努力交付，即不保证可靠交付，同时也不使用拥塞控制。</p>
+<p>UDP 是面向报文的。</p>
+<p>UDP 没有拥塞控制，很适合多媒体通信的要求。</p>
+<p>UDP 的首部开销小，只有 8 个字节。</p>
+<h4 id="UDP首部"><a href="#UDP首部" class="headerlink" title="UDP首部"></a>UDP首部</h4><p>用户数据报 UDP 有两个字段：数据字段和首部字段。首部字段有 8 个字节，由 4 个字段组成，每个字段都是两个字节。<br>在计算检验和时，临时把“伪首部”和 UDP 用户数据报连接在一起。伪首部仅仅是为了计算检验和。</p>
+<p>UDP检验和是一个端到端的检验和。它由发送端计算，然后由接收端验证。其目的是为了发现UDP首部和数据在发送端到接收端之间发生的任何改动。</p>
+<h3 id="TCP详解"><a href="#TCP详解" class="headerlink" title="TCP详解"></a>TCP详解</h3><h4 id="主要特点-1"><a href="#主要特点-1" class="headerlink" title="主要特点"></a>主要特点</h4><p>TCP 是面向连接的运输层协议。</p>
+<p>每一条 TCP 连接只能有两个端点(endpoint)，每一条 TCP 连接只能是点对点的（一对一）。 </p>
+<p>TCP 提供可靠交付的服务。</p>
+<p>TCP 提供全双工通信。</p>
+<h4 id="套接字"><a href="#套接字" class="headerlink" title="套接字"></a>套接字</h4><p>TCP 把连接作为最基本的抽象。<br>每一条 TCP 连接有两个端点。<br>TCP 连接的端点不是主机，不是主机的IP 地址，不是应用进程，也不是运输层的协议端口。TCP 连接的端点叫做套接字(socket)或插口。<br>端口号拼接到(contatenated with) IP 地址即构成了套接字。</p>
+<p>TCP 连接 ::= {socket1, socket2}<br>             = {(IP1: port1), (IP2: port2)} </p>
+<h4 id="TCP报文段首部"><a href="#TCP报文段首部" class="headerlink" title="TCP报文段首部"></a>TCP报文段首部</h4><h3 id="可靠传输工作原理"><a href="#可靠传输工作原理" class="headerlink" title="可靠传输工作原理"></a>可靠传输工作原理</h3><h4 id="停止等待协议（注意点和几种情况P214）"><a href="#停止等待协议（注意点和几种情况P214）" class="headerlink" title="停止等待协议（注意点和几种情况P214）"></a>停止等待协议（注意点和几种情况P214）</h4><p>在发送完一个分组后，必须暂时保留已发送的分组的副本。</p>
+<p>分组和确认分组都必须进行编号。</p>
+<p>超时计时器的重传时间应当比数据在分组传输的平均往返时间更长一些。</p>
+<h4 id="ARQ"><a href="#ARQ" class="headerlink" title="ARQ"></a>ARQ</h4><p>o 累积确认：对按序到达的最后一个分组发送确认</p>
+<p>表示：到这个分组为止的所有分组都已正确收到了</p>
+<p>优点：易实现，即使确认丢失也不必重传</p>
+<p>缺点：不能向发送方反映出接收方已正确收到所有分组的信息</p>
+<p>o Go-back-N(回退N)</p>
+<p>需要再退回来重传已发过的N个分组[发了前5个，第3个丢失，回到第2个进行重传</p>
+<p>o当通信线路质量不好时，连续ARQ协议会带来负面影响</p>
+<h2 id="第六章"><a href="#第六章" class="headerlink" title="第六章"></a>第六章</h2>
+  </div>
+  
+  <div class="article-tags">
+    
+  </div>
+
+  
+
+</article>
+
+      <script>document.getElementById("loading-bar").style.width="60%";</script>
+    </main>
+    
+<footer id="footer" class="clearfix">
+	
+  <div>&copy; <a href="http://yoursite.com">Hexo</a> Theme by <a href="http://artifact.me/" target="_blank">Art Chen</a>.</div>
+  <div>Powered by <a href="https://hexo.io/" rel="external">Hexo</a>.</div>
+</footer>
+
+
+    <script>document.getElementById("loading-bar").style.width="80%";</script>
+    <div class="overlay"></div>
+  </div>
+  <div class="site-sidebar">
+
+	
+	
+	<div class="sidebar-switch clearfix "
+		style="display: none">
+		<a class="dark-btn active" data-toggle="toc">
+	    <span class="icon icon-list"></span>
+	    <span class="text">Index</span>
+	  </a>
+	  <a class="dark-btn" data-toggle="bio">
+	    <span class="icon icon-person"></span>
+	    <span class="text">Bio</span>
+	  </a>
+	</div>
+
+	<div class="site-toc "
+		style="display: none">
+		
+	    <div class="no-index">No Index</div>
+	  
+  </div>
+  
+	<div class="site-bio show"
+		style="display: block">
+		
+	  <!-- About Me -->
+	  <div class="about-me clearfix">
+	    <div class="avatar">
+	      <img src="/img/avatar.png" />
+	    </div>
+	    <div class="info">
+	      <a class="name dark-btn" href="/about">
+	        John Doe
+	      </a>
+	    </div>
+	    <div class="info">
+	      <span class="item desc">
+	        
+	      </span>
+	    </div>
+	  </div>
+	
+	  <!-- Social Icons -->
+	  <div class="social clearfix">
+	    
+	      
+	        <a href="/atom.xml" class="feed"
+	          target="_blank" rel="external">
+	          <span class="icon icon-feed"></span>
+	        </a>
+	      
+	        <a href="https://github.com/artchen" class="github"
+	          target="_blank" rel="external">
+	          <span class="icon icon-github"></span>
+	        </a>
+	      
+	    
+	  </div>
+	
+	  <!-- Home & Bottom -->
+	  <div class="shortcuts clearfix">
+	    <div class="bk">
+	      <a href="#header" class="dark-btn window-nav">
+	        <span class="icon icon-chevron-thin-up"></span>
+	        <span class="text">Back to Top</span>
+	      </a>
+	    </div>
+	    <div class="bk">
+	      <a href="#footer" class="dark-btn window-nav">
+	        <span class="icon icon-chevron-thin-down"></span>
+	        <span class="text">Go to Bottom</span>
+	      </a>
+	    </div>
+	  </div>
+
+	</div>
+
+</div>
+
+  <!-- Universal Search -->
+
+<script type="text/javascript">
+	var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+	var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+	var ALGOLIA_API_KEY = "";
+	var ALGOLIA_APP_ID = "";
+	var ALGOLIA_INDEX_NAME = "";
+  var AZURE_SERVICE_NAME = "";
+  var AZURE_INDEX_NAME = "";
+  var AZURE_QUERY_KEY = "";
+  var BAIDU_API_ID = "";
+  var SEARCH_SERVICE = "hexo";
+</script>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/jquery.js"><\/script>')</script>
+
+<script src="/js/search.js"></script>
+<script src="/js/app.js"></script>
+
+<!-- Disqus -->
+
+
+
+<!-- Valine -->
+
+
+<!-- Swiftype -->
+<!-- Please replace with your own swiftype settings -->
+<!--
+<script type="text/javascript">
+  /* Swiftype */
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','FHMeAyBdVccJECstf-XJ','2.0.0');
+</script>
+-->
+
+  <script>document.getElementById("loading-bar").style.width="100%";</script>
+</body>
+</html>

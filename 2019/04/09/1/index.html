@@ -3,14 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2018 | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="复现题目这里记录一下之前复现的两道题相关知识点 SOAP反序列化来自LCTF2018 基础知识：SOAP协议:SOAP 是一种简单的基于 XML 的协议，它使应用程序通过 HTTP 来交换信息。开启SOAP服务后可在phpinfo页面显示，在soap服务开启后soapclient就变成了php的内置类他的默认方法中包括public __call ( string $function_name ,">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2018/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/04/09/1/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="复现题目这里记录一下之前复现的两道题相关知识点 SOAP反序列化来自LCTF2018 基础知识：SOAP协议:SOAP 是一种简单的基于 XML 的协议，它使应用程序通过 HTTP 来交换信息。开启SOAP服务后可在phpinfo页面显示，在soap服务开启后soapclient就变成了php的内置类他的默认方法中包括public __call ( string $function_name ,">
+<meta property="og:updated_time" content="2019-06-08T09:50:48.436Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="复现题目这里记录一下之前复现的两道题相关知识点 SOAP反序列化来自LCTF2018 基础知识：SOAP协议:SOAP 是一种简单的基于 XML 的协议，它使应用程序通过 HTTP 来交换信息。开启SOAP服务后可在phpinfo页面显示，在soap服务开启后soapclient就变成了php的内置类他的默认方法中包括public __call ( string $function_name ,">
   
   
     <link rel="icon" href="/favicon.png">
@@ -71,42 +75,43 @@
 
     <script>document.getElementById("loading-bar").style.width="40%";</script>
     <main id="main" class="clearfix">
-      <div class="page-header">
-	
+      <article id="post-1"
+  class="article white-box article-type-post"
+  itemscope itemprop="blogPost">
 
-</div>
+  <header class="article-header">
+    <h1 class="article-title" itemprop="name">
+      
+    </h1>
+    <div class="article-meta">
+      Posted on 
+      <time class="article-time" datetime="2019-04-09T08:43:02.264Z" itemprop="datePublished">
+        Apr 9, 2019
+      </time>
+    </div>
+  </header>
 
-<ul class="post-list clearfix">
+  <div class="article-entry" itemprop="articleBody">
+    <h1 id="复现题目"><a href="#复现题目" class="headerlink" title="复现题目"></a>复现题目</h1><p>这里记录一下之前复现的两道题相关知识点</p>
+<h2 id="SOAP反序列化"><a href="#SOAP反序列化" class="headerlink" title="SOAP反序列化"></a>SOAP反序列化</h2><p>来自LCTF2018</p>
+<h3 id="基础知识："><a href="#基础知识：" class="headerlink" title="基础知识："></a>基础知识：</h3><p>SOAP协议:SOAP 是一种简单的基于 XML 的协议，它使应用程序通过 HTTP 来交换信息。开启SOAP服务后可在phpinfo页面显示，在soap服务开启后soapclient就变成了php的内置类他的默认方法中包括<br><code>public __call ( string $function_name , array $arguments ) : mixed</code>魔术方法，可在类调用不存在的方法时自动调用</p>
+<p>soapclint用法如下<br><code>$client     = new SoapClient($url, array(&quot;trace&quot; =&gt; 1, &quot;exception&quot; =&gt; 0));</code><br>第一个参数为目标URL,第二个参数为一个数组，介绍如下<br><code>(mixed $wsdl [,array $options])</code></p>
+<p>$option中包括execute_data,location,uri等参数，如果传入的第一个参数为$wsdl，这个参数控制是否为wsdl模式，若为wsdl模式，则在序列化之前就回对$url进行请求，如果值为NULL即非wsdl模式反序列化时就会对option中的uri进行远程soap请求。</p>
+<p>e.g<br><code>&lt;?php
+$a = new SoapClient(null, array(&#39;location&#39; =&gt; &quot;http://123.206.216.198:8887&quot;,
+                                     &#39;uri&#39;      =&gt; &quot;123&quot;));
+echo serialize($a);
+?&gt;</code><br>自己复现注意：两边的服务器都要有SOAP服务才能完成整个过程</p>
+<h2 id="XSSSRF"><a href="#XSSSRF" class="headerlink" title="XSSSRF"></a>XSSSRF</h2>
+  </div>
   
-    <li class="post-item grid-item">
-	<a class="post-link" href="/2018/10/28/new-start/">
-		<h3 class="post-title"></h3>
-	  <div class="post-meta">
-	    <time datetime="2018-10-28T07:58:04.743Z" itemprop="datePublished">
-	      1028.18
-	    </time>
-	  </div>
-  </a>
-</li>
+  <div class="article-tags">
+    
+  </div>
 
   
-    <li class="post-item grid-item">
-	<a class="post-link" href="/2018/03/20/hello-world/">
-		<h3 class="post-title"></h3>
-	  <div class="post-meta">
-	    <time datetime="2018-03-20T07:13:56.501Z" itemprop="datePublished">
-	      320.18
-	    </time>
-	  </div>
-  </a>
-</li>
 
-  
-</ul>
-
-
-
-
+</article>
 
       <script>document.getElementById("loading-bar").style.width="60%";</script>
     </main>
