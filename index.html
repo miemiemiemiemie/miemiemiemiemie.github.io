@@ -1,348 +1,963 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head>
-  <meta charset="utf-8">
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content="John Doe" />
+
+
+    
+    
+
+
+<meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-	<!-- If needed, replace your own web font service -->
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700" rel="stylesheet">
 
-  
-   
-  <link rel="stylesheet" href="/icomoon/style.css">
-  <link rel="stylesheet" href="/style.css">
+<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
+
+
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/favicon.png">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <style> .article { opacity: 0;} </style>
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>Hexo</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: true,
+        isPost: false,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: 
+    }
+</script>
+
+
+    <script> yiliaConfig.jquery_ui = [false]; </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
 
 </head>
-
 <body>
-  <div class="site-wrapper">
-    <div id="loading-bar-wrapper">
-  <div id="loading-bar"></div>
-</div>
-<script>document.getElementById("loading-bar").style.width="20%";</script>
-
-
-<header id="header" class="site-header clearfix">
-
-  <a class="logo square clearfix" href="/">
-    <!-- 
-      Replace with your own size name, for example:
-      <span class="b">A</span>
-      <span class="w">B</span>
-      <span class="b">C</span>
-     -->
-    
-      <span class="b">
-        H
-      </span>
-    
-      <span class="w">
-        e
-      </span>
-    
-      <span class="b">
-        x
-      </span>
-    
-      <span class="w">
-        o
-      </span>
-    
-  </a>
-  <a class="me square site-nav-switch clearfix">
-    <span class="b">
-    	<span class="icon icon-menu"></span>
-    </span>
-  </a>
-
-</header>
-
-    <script>document.getElementById("loading-bar").style.width="40%";</script>
-    <main id="main" class="clearfix">
-      <div class="page-header">
-	
-
-</div>
-
-<ul class="post-list clearfix">
-  
-    <li class="post-item grid-item">
-	<a class="post-link" href="/2020/01/02/域环境学习/">
-		<h3 class="post-title"></h3>
-	  <div class="post-meta">
-	    <time datetime="2020-01-02T12:46:04.768Z" itemprop="datePublished">
-	      12.20
-	    </time>
-	  </div>
-  </a>
-</li>
-
-  
-    <li class="post-item grid-item">
-	<a class="post-link" href="/2019/11/15/deepnetwork/">
-		<h3 class="post-title"></h3>
-	  <div class="post-meta">
-	    <time datetime="2019-11-15T15:20:51.974Z" itemprop="datePublished">
-	      1115.19
-	    </time>
-	  </div>
-  </a>
-</li>
-
-  
-    <li class="post-item grid-item">
-	<a class="post-link" href="/2019/06/08/jiw/">
-		<h3 class="post-title"></h3>
-	  <div class="post-meta">
-	    <time datetime="2019-06-08T14:33:01.307Z" itemprop="datePublished">
-	      68.19
-	    </time>
-	  </div>
-  </a>
-</li>
-
-  
-    <li class="post-item grid-item">
-	<a class="post-link" href="/2019/05/04/20190504/">
-		<h3 class="post-title"></h3>
-	  <div class="post-meta">
-	    <time datetime="2019-05-03T16:09:38.007Z" itemprop="datePublished">
-	      54.19
-	    </time>
-	  </div>
-  </a>
-</li>
-
-  
-    <li class="post-item grid-item">
-	<a class="post-link" href="/2019/04/25/6/">
-		<h3 class="post-title"></h3>
-	  <div class="post-meta">
-	    <time datetime="2019-04-25T10:20:09.097Z" itemprop="datePublished">
-	      425.19
-	    </time>
-	  </div>
-  </a>
-</li>
-
-  
-    <li class="post-item grid-item">
-	<a class="post-link" href="/2019/04/22/5/">
-		<h3 class="post-title"></h3>
-	  <div class="post-meta">
-	    <time datetime="2019-04-22T11:26:38.303Z" itemprop="datePublished">
-	      422.19
-	    </time>
-	  </div>
-  </a>
-</li>
-
-  
-    <li class="post-item grid-item">
-	<a class="post-link" href="/2019/04/21/4/">
-		<h3 class="post-title"></h3>
-	  <div class="post-meta">
-	    <time datetime="2019-04-20T16:23:03.742Z" itemprop="datePublished">
-	      421.19
-	    </time>
-	  </div>
-  </a>
-</li>
-
-  
-    <li class="post-item grid-item">
-	<a class="post-link" href="/2019/04/15/3/">
-		<h3 class="post-title"></h3>
-	  <div class="post-meta">
-	    <time datetime="2019-04-14T16:00:02.528Z" itemprop="datePublished">
-	      415.19
-	    </time>
-	  </div>
-  </a>
-</li>
-
-  
-    <li class="post-item grid-item">
-	<a class="post-link" href="/2019/04/13/2/">
-		<h3 class="post-title"></h3>
-	  <div class="post-meta">
-	    <time datetime="2019-04-13T14:08:10.887Z" itemprop="datePublished">
-	      413.19
-	    </time>
-	  </div>
-  </a>
-</li>
-
-  
-    <li class="post-item grid-item">
-	<a class="post-link" href="/2019/04/09/1/">
-		<h3 class="post-title"></h3>
-	  <div class="post-meta">
-	    <time datetime="2019-04-09T08:43:02.264Z" itemprop="datePublished">
-	      49.19
-	    </time>
-	  </div>
-  </a>
-</li>
-
-  
-</ul>
-
-
-  <nav id="page-nav">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next</a>
-  </nav>
-
-
-
-
-      <script>document.getElementById("loading-bar").style.width="60%";</script>
-    </main>
-    
-<footer id="footer" class="clearfix">
-	
-  <div>&copy; <a href="http://yoursite.com">Hexo</a> Theme by <a href="http://artifact.me/" target="_blank">Art Chen</a>.</div>
-  <div>Powered by <a href="https://hexo.io/" rel="external">Hexo</a>.</div>
-</footer>
-
-
-    <script>document.getElementById("loading-bar").style.width="80%";</script>
+  <div id="container">
+    <div class="left-col">
     <div class="overlay"></div>
-  </div>
-  <div class="site-sidebar">
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/avatar.png" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">John Doe</a></h1>
+        </hgroup>
 
-	
-	
-	<div class="sidebar-switch clearfix "
-		style="display: none">
-		<a class="dark-btn active" data-toggle="toc">
-	    <span class="icon icon-list"></span>
-	    <span class="text">Index</span>
-	  </a>
-	  <a class="dark-btn" data-toggle="bio">
-	    <span class="icon icon-person"></span>
-	    <span class="text">Bio</span>
-	  </a>
-	</div>
+        
 
-	<div class="site-toc "
-		style="display: none">
-		
-	    <div class="no-index">No Index</div>
-	  
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" href="mailto:123@123.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" href="#" title="GitHub"></a>
+                            
+                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">专注于前端</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">John Doe</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/avatar.png" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">John Doe</a></h1>
+            </hgroup>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" target="_blank" href="mailto:123@123.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
+                            
+                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+</nav>
+      <div class="body-wrap">
+  
+    <article id="post-域环境学习" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2020/01/02/域环境学习/" class="article-date">
+      <time datetime="2020-01-02T12:46:04.768Z" itemprop="datePublished">2020-01-02</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="域环境学习"><a href="#域环境学习" class="headerlink" title="域环境学习"></a>域环境学习</h1><p>参考：<a href="https://www.secpulse.com/archives/94848.html" target="_blank" rel="noopener">https://www.secpulse.com/archives/94848.html</a></p>
+<h2 id="一些基本概念"><a href="#一些基本概念" class="headerlink" title="一些基本概念"></a>一些基本概念</h2><h3 id="IPC进程间通信"><a href="#IPC进程间通信" class="headerlink" title="IPC进程间通信"></a>IPC进程间通信</h3><p>有管道/SOCKET等进程间通信的方式（<a href="https://www.jianshu.com/p/c1015f5ffa74）（https://en.wikipedia.org/wiki/Inter-process_communication）" target="_blank" rel="noopener">https://www.jianshu.com/p/c1015f5ffa74）（https://en.wikipedia.org/wiki/Inter-process_communication）</a><br>在实际中的利用参考，注意防火墙139/445端口的开放<br><a href="https://www.cnblogs.com/adforce/archive/2012/02/19/2358724.html" target="_blank" rel="noopener">https://www.cnblogs.com/adforce/archive/2012/02/19/2358724.html</a></p>
+<h3 id="LSA"><a href="#LSA" class="headerlink" title="LSA"></a>LSA</h3><p>Local Security Authority，用于身份认证，常见进程为lsass.exe</p>
+<p>在系统启动的时候SSP会被加载到进程lsass.exe中</p>
+<p>SSP是Security Support Provider，直译为安全支持提供者，又名Security Package.</p>
+<p>简单的理解为SSP就是一个DLL，用来实现身份认证</p>
+<h3 id="默认共享"><a href="#默认共享" class="headerlink" title="默认共享"></a>默认共享</h3><p>IPC$(Internet Process Connection)可以被理解为一种“专用管道”，可以在连接双方建立一条安全的通道，实现对远程计算机的访问。Windows NT/2000/XP提供了IPC$功能的同时，在初次安装系统时还打开了默认共享，即所有的逻辑共享(C$,D$,E$……)和系统目录(ADMIN$)共享。所有这些共享的目的，都是为了方便管理员的管理，只要有管理员权限就可以轻松访问这些</p>
+<h3 id="SPN"><a href="#SPN" class="headerlink" title="SPN"></a>SPN</h3><p>服务主体名称（SPN:Service Principal Names）是服务实例，可以将其理解为一个服务（比如 HTTP、MSSQL）的唯一标识符，服务在加入域中时是自动注册的。</p>
+<p>当域控查询某一个服务的SPN时</p>
+<p>如果该SPN注册在<code>机器账户computers</code>下，将会查询所有<code>机器账户</code>的servicePrincipalName属性，找到所对应的账户。</p>
+<p>如果是注册在<code>域用户账户users</code>下，将会查询所有<code>域用户账户</code>的servicePrincipalName属性，找到其所对应的账户。</p>
+<p>找到对应的账户之后，使用它的NTLM hash生成TGS。</p>
+<p>域内的<code>所有主机</code>都是可以查询SPN的</p>
+<p>域内的<code>任何用户</code>都是可以向域内的任何服务请求TGS</p>
+<p>所以，域内的任何一台主机，都可以通过查询SPN，向域内的所有服务请求TGS，然后进行暴力破解，但是对于破解出的明文，只有域用户的是可以利用的，机器账户的不能用于远程连接，<code>所以我们的关注点主要就在域用户下注册的SPN</code>。</p>
+<p>参考<a href="https://juejin.im/post/5d8ea518e51d4577fa2b0163" target="_blank" rel="noopener">https://juejin.im/post/5d8ea518e51d4577fa2b0163</a></p>
+<p>我们可以通过以下命令来查询当前域下的所有SPN</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">setspn –q */*</span><br></pre></td></tr></table></figure>
+<p>SPN格式为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">serviceclass/host:port servicename</span><br></pre></td></tr></table></figure>
+<h3 id="ACL"><a href="#ACL" class="headerlink" title="ACL"></a>ACL</h3><p>Access Control Link Windows</p>
+<p>安全对象的ACL 所有的Windows对象都称为安全对象，文件、进程、 注册表、内存等 为每个安全对象赋予一个安全描述符（security desc riptor）</p>
+<h3 id="PAC"><a href="#PAC" class="headerlink" title="PAC"></a>PAC</h3><p>微软使用PAC来表示TGS中Client申明的域组。</p>
+<p>PAC包含Client的User的SID、Group的SID。PAC决 定了Client的组属性，即决定了Client的权限 </p>
+<p>PAC为了保证自身的合法性，还包含2个签名，Key 为krbtgt的NTLM，签名的内容除了User SID、Group S ID外，还有其他部分 PAC作为TGT的一部分，是加密的，密钥为krbtgt的 NTLM</p>
+<p>第一阶段放置在TGT中：</p>
+<p>Client向KDC的AS模块发起认证请求，AS返回TGT 时，会根据Client所在的组，生成PAC，放在TGT中</p>
+<p>第二阶段放置在TGS中：</p>
+<p>Client使用TGT向KDC的TGS模块发起访问Server服务时，KDC的TGS模块首先解密TGT，并通过校验2个签名，以验证PAC的合法性。</p>
+<p> 如果通过验证，KDC的TGS模块用2个新的签名替代老的签名来保证PAC不被篡改。第一个签名的密钥为Server的NTLM，第二个密钥为Server与Client的临时会话密钥。重新签名后的PAC被放置在签发的访问票据TGS中， 使用Server的NTLM作为密钥</p>
+<h3 id="组策略的更新"><a href="#组策略的更新" class="headerlink" title="组策略的更新"></a>组策略的更新</h3><p>客户端每90分钟主动获取一次组策略，检查组策略是否发生变更<br>客户端使用gpupdate/force强制立即检查组策略<br>参数可以分为主机和用户，gpupdate/force/target:computer</p>
+<h3 id="kerberos过程"><a href="#kerberos过程" class="headerlink" title="kerberos过程"></a>kerberos过程</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1)首先,客户端(client)将域用户的密码hash一次并保存,然后,以此hash来作为客户端和KDC之间的长期共享密钥[kc](当然,在DC上也保存着同样的一条hash)</span><br><span class="line">2)之后,客户端(client)开始利用(1)中的域用户密码hash再把时间戳,clientid,TGS id等信息混合hash一次,然后向as(认证服务器 [Authentication Server])服务器进行请求</span><br><span class="line">3)as接到该请求后,利用长期共享密钥(kc)进行解密,解密成功后,会返回给客户端两个票据  (1)加密的K(c,tgt)(用于客户端后续向KDC发起请求),TGT Name/ID,时间戳等,该票据由Kc加密  (2)票据授予票据(TGS),该票据是给TGS的,票据的内容包括K(c,tgs),Client身份信息,域名,时间戳等,该票据由TGS的秘钥加密,只有TGS能够解密</span><br><span class="line">4)然后,客户端会利用长期共享密钥解密k(c,tgs),并利用该秘钥加密生成一个Authenticator,内容包括:lifetime,时间戳,Client身份信息等,连同从AS获取的TGT一并发送给TGS</span><br><span class="line">5)TGS利用自身的秘钥解密TGT,获取K(c,tgs),并用K(c,tgs)解密客户端发送的Authenticator,对Client进行认证,如果Client通过了认证,TGS随机生成一个Session Key K(c,s),并产生两个票据  (1)服务票据(Ts):这是给服务器的服务票据,由Server秘钥Ks加密,内容包括：K(c,s),Client身份信息,Service ID,时间戳,lifetime等  (2)客户端票据(Tc)：该票据由K(c,tgs)加密,内容包括：K(c,s),Server身份信息等</span><br><span class="line">6)客户端收到tgs的回应后,利用K(c,tgs)解密Tc,获取K(c,s),Server身份信息等,并利用K(c,s)加密生成一个Authenticator发送给Server,内容包括:时间戳,Client ID等信息,连同Ts一并发送给Server</span><br><span class="line">7)Server端在收到Client的请求后,利用自身秘钥Ks解密Ts,得到K(c,s),再利用K(c,s)解密Authenticator,对Client进行认证,如果认证通过,则表示KDC已经允许了此次通信,此时Sever无需与KDC通信,因为Ks为KDC和Sever之间的长期共享秘钥,如果在有效时间内,则此次请求有效:</span><br></pre></td></tr></table></figure>
+<ul>
+<li>KDC(Key Distribution Center):密钥分发中心，里面包含两个服务：AS和TGS</li>
+<li>AS(Authentication Server):身份认证服务</li>
+<li>TGS(Ticket Granting Server):票据授予服务,<strong>该服务提供的票据也称为 TGS 或者叫白银票据</strong></li>
+<li>TGT(Ticket Granting Ticket):由身份认证服务授予的票据<strong>(黄金票据)</strong>，用于身份认证，存储在内存，默认有效期为10小时</li>
+</ul>
+<h3 id="备用"><a href="#备用" class="headerlink" title="备用"></a>备用</h3><p>klist查看当前票据</p>
+<p>klist purge清除票据</p>
+<h3 id="NTLM协议过程"><a href="#NTLM协议过程" class="headerlink" title="NTLM协议过程"></a>NTLM协议过程</h3><p>NTLM Hash指存储在SAM数据库及NTDS数据库中对密码进行摘要计算后的结果</p>
+<p>认证过程：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">第一步,首先在client输入username,password和domain,然后client会把password hash后的值先缓存到本地</span><br><span class="line">第二步,之后,client把username的明文发送给server(DC)</span><br><span class="line">第三步,DC会生成一个16字节的随机数,即challenge(挑战码),再传回给client</span><br><span class="line">第四步,当client收到challenge以后,会先复制一份出来,然后和缓存中的密码hash再一同混合hash一次,混合后的值称为response,之后client再将challenge,response及username一并都传给server</span><br><span class="line">第五步,server端在收到client传过来的这三个值以后会把它们都转发给DC</span><br><span class="line">第六步,当DC接到过来的这三个值的以后,会根据username到域控的账号数据库(ntds.dit)里面找到该username对应的hash,然后把这个hash拿出来和传过来的challenge值再混合hash</span><br><span class="line">第七步,将(6)中混合后的hash值跟传来的response进行比较,相同则认证成功,反之,则失败,当然,如果是本地登录,所有验证肯定也全部都直接在本地进行了</span><br></pre></td></tr></table></figure>
+<h2 id="基础环境搭建操作学习"><a href="#基础环境搭建操作学习" class="headerlink" title="基础环境搭建操作学习"></a>基础环境搭建操作学习</h2><h3 id="理论"><a href="#理论" class="headerlink" title="理论"></a>理论</h3><h4 id="一些基础概念"><a href="#一些基础概念" class="headerlink" title="一些基础概念"></a>一些基础概念</h4><p><strong>服务器角色</strong>：<br> Roles是出现Windows Server 2008中一个新的概念，也是Windows Server 2008管理特性中很重要的一个亮点。怎么理解Roles呢，字面指的是角色，这里指的就是<strong>服务器角色</strong>，或者指的是运行某一个特定服务的服务器角色。<em>当一台服务器安装了某个服务后，其实就是赋予了这台服务器一个角色</em>，这个角色的任务就是为应用程序、计算机、或者整个网络环境提供这个服务。<br><strong>Active Directory 域服务（就是一种角色）</strong>：<br>Active Directory 域服务 (AD DS) 存储有关网络上的用户、计算机和其他设备的信息。AD DS 帮助管理员安全地管理此信息并促使在用户之间实现资源共享和协作。此外，为了安装启用目录的应用程序（如 Microsoft Exchange Server）并应用其他 Windows Server 技术（如“组策略”），还需要在网络上安装 AD DS。<br><strong>本地账户和组账户</strong>：<br>区分于域用户账户<br>默认本地用户账户有：Administrator Guest<br>注意：本地用户和组原本是在计算机管理里面的，但是当安装了AD控制器，也就是Active Directory也就是域控制器后，用户和组就不能在计算机管理面显示了，而要通过与控制进行用户管理，可以直接从管理工具里面进入，也可以通过dsa.msc进入<br><strong>NTFS文件系统管理</strong><br>NTFS ：New Technology File System</p>
+<p>权限（<em>权限附加于AD，注册表，进程等对象，授权用户，组，计算机的访问操作范围</em>），<br>对象所有者（<em>对象在创建时指派所有者，默认他为创建者，可更改对象权限</em>），<br>权限的继承，<br>用户权利（<em>应用于用户账户，授予特定权限</em>），等概念组成访问控制</p>
+<p><strong>文件夹共享</strong></p>
+<p><strong>本地安全策略</strong><br>账户策略<br>本地策略<br><strong>IP安全策略</strong></p>
+<h4 id="服务器类型"><a href="#服务器类型" class="headerlink" title="服务器类型"></a>服务器类型</h4><p>1.独立服务器<br>2.域控制器<br>3.成员服务器<br>4.额外域控制器</p>
+<h4 id="容器"><a href="#容器" class="headerlink" title="容器"></a>容器</h4><p>在 开始-管理工具-AD用户和计算机可以看到容器对象</p>
+<p>Builtin容器：保存域中本地组对象<br>Computer容器：存放域中所有成员计算机的计算机账户<br>Domain Controllers容器:存放当前域控制器下创建的所有子域控制器，辅助控制器，，，<br>ForeignSecurityPrincipals容器：存放受信任的安全主体<br>Users容器：域用户</p>
+<h4 id="域树和域林的理解"><a href="#域树和域林的理解" class="headerlink" title="域树和域林的理解"></a>域树和域林的理解</h4><p>基础概念：<br>单域（只有一个域，不存在信任关系，建议部署两个域控，域控和额外域控）<br>子域（父子信任双向可传递）<br>域树（域树基于父子信任(Child Domain)，所以之间也是双向可传递信任，适用于网络规模大地理位置分散）<br>域林（适用于企业不平等兼并后，自动创建双向可传递的域树间关系(Tree Domain)）<br>(域森林也适用于企业平等合并)</p>
+<p>WIN2008管理分支机构两种方法：<br>1：子域<br>2：只读域控制器RODC（适用于安全较差的环境，包含AD数据库的只读部分，只可以根据需要从主DC上复制所需数据）</p>
+<p><a href="https://blog.51cto.com/angerfire/144123" target="_blank" rel="noopener">参考</a><br><img src="https://i.imgur.com/VLPf370.png" alt=""><br><img src="https://i.imgur.com/2SLuKUj.png" alt=""><br><img src="https://i.imgur.com/pnBHLxx.png" alt=""><br>很多管理员在面对多域环境时很害怕找不到根域，根域有一个很显著的特征，在根域的DC上会有两个特殊的组：<br>Enterprise admins<br>Schema admins<br>而域林中其他的域服务器上是没有这两个组的。</p>
+<h4 id="功能级别"><a href="#功能级别" class="headerlink" title="功能级别"></a>功能级别</h4><p>域功能级别：低级可升级（在低级不能使用操作系统更高级的域控）<br>林功能级别：低级可升级（在低级不能使用操作系统更高级的域控</p>
+<h4 id="域用户和计算机用户"><a href="#域用户和计算机用户" class="headerlink" title="域用户和计算机用户"></a>域用户和计算机用户</h4><p>域用户可以在USERS容器看到，administrator是最高级别的域用户，域用户是针对整个域而言可以在域内任一台计算机登陆（在权限可以的情况下）<br>计算机用户可以在computers容器看到，是加入域的计算机的名字</p>
+<h4 id="操作主机角色"><a href="#操作主机角色" class="headerlink" title="操作主机角色"></a>操作主机角色</h4><p>域中的第一台域控制器承担操作主机角色<br>林范围的：只有一台是，这一台可以是两种类型（架构主机角色/域命名主机角色）<br>域范围的：只有一台是，这一台可以是三种类型（PDC主机角色/RID主机角色/基础结构）</p>
+<h4 id="组织单位"><a href="#组织单位" class="headerlink" title="组织单位"></a>组织单位</h4><p>可体现管理模型，把域中的多种类型对象形成一个逻辑层次架构，一个对象在一个组织单位就不可以在另一个组织单位。也可以取消权限继承<br>可以按照<br>管理对象模型（管理组·用户组·计算机组）<br>地理模型(北京分公司·上海分公司)<br>商业功能模型（市场部·技术部）<br>部门模型<br>项目模型 等划分</p>
+<h4 id="组"><a href="#组" class="headerlink" title="组"></a>组</h4><p>权力和权限的集合<br>组的类型：安全组（可分配权限分配资源用于通信）  分发组（用于通信）<br>组功能（根据组作用域不同）<br>1.全局组（属于某个域，包括来自相同域的用户/组，只在域控中存在，作用域为整个林）<br>2.通用组（不属于特定域，用于域间访问，包含任意域的用户/组，作用域为目录林范围）<br>3.域本地组（属于某个域，只能在本域域控上使用，成员只能访问本地资源）</p>
+<h3 id="安装实践"><a href="#安装实践" class="headerlink" title="安装实践"></a>安装实践</h3><p>1.为域控修改计算机名字<br>2.设置固定IP(<em>网关为虚拟机默认网关，可在编辑里修改，不能使用DHCP自动分配，否则之后配置DNS等服务时还得再改成固定的</em>)<br>3.添加AD DS服务器角色<br>4.服务器角色安装成功后启动dcpromo.exe(AD域服务安装向导)一直下一步（注意选择在新林中新建域）<br>5.命名林根域 xxx.com<br>6.将客户端计算机加入域:设置IP时设置DNS服务器为主域控IP，在控制面板-系统-计算机名点更改，将隶属于修改为域（未修改之前处于工作组workgroup）重新启动后就可以用域内的账号登陆<br>7.域控制器降级为成员服务器：以管理员登陆AD域控，运行dcpromo.exe，此时会有删除提醒，如果勾选“这个服务器是最后一个域控制器”，则删除后变成独立服务器，否则变成成员服务器</p>
+<h2 id="漏洞积累"><a href="#漏洞积累" class="headerlink" title="漏洞积累"></a>漏洞积累</h2><h3 id="组策略攻击"><a href="#组策略攻击" class="headerlink" title="组策略攻击"></a>组策略攻击</h3><p>客户端定期从DC那里更新组策略（如脚本）攻击者可以在DC上创建vbs脚本，在客户端更新脚本后用户启动时执行获取客户端权限<br>手动更新组策略：gpupdate /force(不行，得重启)</p>
+<h3 id="PTH攻击"><a href="#PTH攻击" class="headerlink" title="PTH攻击"></a>PTH攻击</h3><h4 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h4><p>在NTLM认证时，若无指定，则使用当前NTLM进行认证，可使用mimikatz将获得的ntlmhash注入会话，登陆到其他域内主机</p>
+<p><strong>用法</strong>：在获得一台域内机器的权限后，通过pth得到其他域内机器的控制</p>
+<p><strong>条件</strong>：获得的域用户的NTLM HASH在两台（获得的机器和要攻击的）上相同且都在管理员组</p>
+<p><strong>实际运用场景</strong>：普通域用户在本地管理员组中，使用同一NTLMHASH管理域内机器</p>
+<p><strong>注意</strong>：在windows nt 5.x系统（Windows 2000/Windows XP/Windows Server 2003），管理员组账号的网络登陆都能获取系统权限</p>
+<p>6.X系统（Windows Vista/Windows Server 2008/Windows 7/Windows Server 2008 R2 ）只有SID=500的才可以，其他管理员组成员远程登陆不可以获得完全管理员权限，只有交互式登陆才可以（UAC设置）即便没有打KB2871997，windows server 2008 r2依然阻止了RID非500本地管理员组账户的远程登陆（但是域管理员组的账户可以）</p>
+<h4 id="UAC"><a href="#UAC" class="headerlink" title="UAC"></a>UAC</h4><p>UAC通过一个注册表键值判断，若设为1，则SID500也不能远程最高权限</p>
+<p>另一个注册表键值LocalAccountTokenFilterPolicy 若1，则所有管理员组可远程登陆最高权限</p>
+<p>域用户若加入本地管理员组则不受以上约束（在非域环境受限多）</p>
+<h4 id="防御"><a href="#防御" class="headerlink" title="防御"></a>防御</h4><p>KB2871997补丁：删除缓存的明文密码</p>
+<p>修改注册表键值HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ Windows\CurrentVersion\Policies\System\FilterAd ministratorToken</p>
+<p>禁用 WDigest，配置如下键值：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurityProviders\WDigest</span><br></pre></td></tr></table></figure>
+<p>KB2871997没有限制域内PTH方式</p>
+<h4 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h4><p>msf:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">use exploit/windows/smb/psexec_psh</span><br></pre></td></tr></table></figure>
+<p>mimikatz</p>
+<h4 id="实验"><a href="#实验" class="headerlink" title="实验"></a>实验</h4><p>本地组测试：以完全管理员权限运行CMD runas /user:administrator “cmd /k”</p>
+<p>使用mimikatz:</p>
+<p>mimikatz.exe “privilege::debug” “sekurlsa::lsa /patch”获取ntlmhash</p>
+<p>使用pth注入管理员组用户（非500）不能查看c$共享</p>
+<p>域用户测试：普通域用户在被害机本地管理员组内（通过域控的组策略部署），PTH注入会话后在被害机上有完全管理员权限（UAC键值也没有影响）</p>
+<p>注意 /domain为域的名字</p>
+<h2 id="Kerberosating攻击"><a href="#Kerberosating攻击" class="headerlink" title="Kerberosating攻击"></a>Kerberosating攻击</h2><h3 id="理解-1"><a href="#理解-1" class="headerlink" title="理解"></a>理解</h3><p><strong>条件</strong>：1.KDC使用运行服务的服务账号的NTLM加密授权票据TGS（可申请得到） </p>
+<p>2.Windows系统会支持多种加密算法，例如AES、DES、RC4、MD5等。在Windows2003、Windows2000系统中，主要采用RC4、MD5、HMAC_MD5等算法，这些算法相对比较容易破解。</p>
+<p>3.服务账号的密码较简单（软件安装时自动设置，几乎不更改）</p>
+<p>已知函数fx（公开）y (TGS)<br>key不复杂可爆破，就可以通过x验证爆破结果是否正确</p>
+<p>根据Kerberos协议，任何用户均可以向域服务器申请访问某个服务<br>服务可以不在线，只要该服务在域中注册了SPN（ServicePrincipalName）</p>
+<p>SPN存在于账号的属性中，因此可以通过查询所有账号的属性，遍历域内所有SPN服务。因为主机账号的口令几乎不能破解，所以只查询用户账号的SPN。系统提供了PowerShell模块供查询，PowerViewer对模块进行了封装，提供Get-DomainUser-SPN命令，可遍历域内所有的用户账号的SPN</p>
+<p>得到SPN后，可利用mimikatz的Kerberos模块申请获取TGS</p>
+<p>kerberos::ask /target:SPN /export<br>会得到一个. kirbi文件</p>
+<p>然后，使用kerberoast工具破解获取口令，用“tgsrepcrack.pywordlist.txttgs.kirbi”<br>进行破解，wordlist.txt是字典文件，tgs.kirbi是前面获取的TGS</p>
+<p>破解获取服务账号的口令后，剩下的是如何利用账号，以实现对域的控制<br>白银票据</p>
+<h3 id="实验-1"><a href="#实验-1" class="headerlink" title="实验"></a>实验</h3><p>扫描SPN setspn -q <em> / </em></p>
+<p>获取TGS kerberos::ask /target:SPN /export(导出)  存到一个kirbi文件中<br>爆破获取的口令</p>
+<h3 id="防御-1"><a href="#防御-1" class="headerlink" title="防御"></a>防御</h3><p>Kerberoasting攻击的主要前提是口令复杂度较低、 加密算法强度较弱</p>
+<p>  提高服务账号的口令复杂度；</p>
+<p> 尽量将域内的服务器系统升级至少至Windows 2008 系统，应用AES256高难度的加密算法 </p>
+<h2 id="黄金票据"><a href="#黄金票据" class="headerlink" title="黄金票据"></a>黄金票据</h2><h3 id="理解-2"><a href="#理解-2" class="headerlink" title="理解"></a>理解</h3><p>由于krbtgt账号的NTLM加密TGT，所以如果获得了，就可以伪造TGT票据</p>
+<p>条件：</p>
+<p>1、krbtgt账号的NTLM<br>2、域的SID，任意一台域内主机均可获取<br>3、有域内主机</p>
+<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><p>在域管上获取krbtgt账号的NTLM<br>mimikatz.exe “privilege::debug” “lsadump::lsa /patch” exit &gt; 2.txt<br>mimikatz.exe “privilege::debug” “lsadump::dcsync /user:<a href="mailto:krbtgt@xx.com" target="_blank" rel="noopener">krbtgt@xx.com</a>“ exit &gt; hash.txt</p>
+<p>获取域SID<br>powershell命令get-domainsid</p>
+<p>构造<br>mimikatz.exe”kerberos::golden /user:anyusername /domain:adsec.com /sid:S-1-5-21-2732272027-<br>1570987391-2638982533 /krbtgt:16ed27ee7848756<br>cfa96b33c25e3ad3d/ptt”exit</p>
+<p>（ptt将票据注入会话，在弹出的新会话里以域名形式访问共享资源）（IP不行）</p>
+<p>DC上不会产生4624安全日志</p>
+<h2 id="MS14-068"><a href="#MS14-068" class="headerlink" title="MS14-068"></a>MS14-068</h2><h5 id="理解-3"><a href="#理解-3" class="headerlink" title="理解"></a>理解</h5><p>Server收到Client发来的TGS后，要根据TGS中Client申明所在的域组，和Server上的ACL进行比对，然后决定给予Client什么样的资源访问权限。<br>微软使用PAC来表示TGS中Client申明的域组。PAC<br>（PrivilegeAttributeCertificate），特权属性书。PAC中有group的SID（决定权限）</p>
+<p>注意的是，域SID是以域用户登录Win7域机器获得的，而漏洞利用则是在该域机器的本地账户下才能测试成功。</p>
+<h4 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h4><p>1.KDC对PAC进行验证时，对于PAC尾部的签名算法， 虽然原理上规定必须是带有Key的签名算法才可以，但在实现上，却允许任意签名算法，只要客户端指定任意签名算法，KDC服务器就会使用指定的算法进行签名验证。</p>
+<p>2.PAC没有被放在TGT中，放在其它地方。KDC仍然能够正确解析出没有放在TGT中的PAC信息 。（include-PAC标志设置为false两次后，就能导致PAC可以放在其它地方）</p>
+<p>3.只要TGS_REQ按照刚才那两个要求设置，KDC服务器会做出令人吃惊的事情：它不仅会从Authenticator中取出来subkey把PAC信息解密并利用客户端设定的签名算法验证签名，同时将另外的TGT进行解密得到SessionKeya-kdc；在验证成功后，把解密的PAC信息的尾部，重新采用自身Server_key和KDC_key生成一个带Key的签名，把SessionKeya-kdc用subkey加密，从而组合成了一个新的TGT返回给Client-A</p>
+<h4 id="实验-2"><a href="#实验-2" class="headerlink" title="实验"></a>实验</h4><p>使用ms14-068.py -u （域内任意用户，要知道明文）-s USERSID -d 指定域服务器</p>
+<h2 id="真实环境积累"><a href="#真实环境积累" class="headerlink" title="真实环境积累"></a>真实环境积累</h2><h3 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h3><p>判断在哪个域：systeminfo<br>判断是否在域内：net time /domain</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
   </div>
   
-	<div class="site-bio show"
-		style="display: block">
-		
-	  <!-- About Me -->
-	  <div class="about-me clearfix">
-	    <div class="avatar">
-	      <img src="/img/avatar.png" />
-	    </div>
-	    <div class="info">
-	      <a class="name dark-btn" href="/about">
-	        John Doe
-	      </a>
-	    </div>
-	    <div class="info">
-	      <span class="item desc">
-	        
-	      </span>
-	    </div>
-	  </div>
-	
-	  <!-- Social Icons -->
-	  <div class="social clearfix">
-	    
-	      
-	        <a href="/atom.xml" class="feed"
-	          target="_blank" rel="external">
-	          <span class="icon icon-feed"></span>
-	        </a>
-	      
-	        <a href="https://github.com/artchen" class="github"
-	          target="_blank" rel="external">
-	          <span class="icon icon-github"></span>
-	        </a>
-	      
-	    
-	  </div>
-	
-	  <!-- Home & Bottom -->
-	  <div class="shortcuts clearfix">
-	    <div class="bk">
-	      <a href="#header" class="dark-btn window-nav">
-	        <span class="icon icon-chevron-thin-up"></span>
-	        <span class="text">Back to Top</span>
-	      </a>
-	    </div>
-	    <div class="bk">
-	      <a href="#footer" class="dark-btn window-nav">
-	        <span class="icon icon-chevron-thin-down"></span>
-	        <span class="text">Go to Bottom</span>
-	      </a>
-	    </div>
-	  </div>
+</article>
 
-	</div>
 
+
+
+
+
+
+
+
+  
+    <article id="post-deepnetwork" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2019/11/15/deepnetwork/" class="article-date">
+      <time datetime="2019-11-15T15:20:51.974Z" itemprop="datePublished">2019-11-15</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="域渗透环境搭建与学习"><a href="#域渗透环境搭建与学习" class="headerlink" title="域渗透环境搭建与学习"></a>域渗透环境搭建与学习</h1><h2 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h2><h3 id="域环境"><a href="#域环境" class="headerlink" title="域环境"></a>域环境</h3><h3 id="组策略"><a href="#组策略" class="headerlink" title="组策略"></a>组策略</h3><h3 id="NTLM"><a href="#NTLM" class="headerlink" title="NTLM"></a>NTLM</h3><h3 id="kerberos"><a href="#kerberos" class="headerlink" title="kerberos"></a>kerberos</h3><h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><h2 id="漏洞"><a href="#漏洞" class="headerlink" title="漏洞"></a>漏洞</h2><h3 id="黄金票据"><a href="#黄金票据" class="headerlink" title="黄金票据"></a>黄金票据</h3><h3 id="白银票据"><a href="#白银票据" class="headerlink" title="白银票据"></a>白银票据</h3><h3 id="MS14-068"><a href="#MS14-068" class="headerlink" title="MS14-068"></a>MS14-068</h3><h3 id="MS15-011与MS15-014"><a href="#MS15-011与MS15-014" class="headerlink" title="MS15-011与MS15-014"></a>MS15-011与MS15-014</h3>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-jiw" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2019/06/08/jiw/" class="article-date">
+      <time datetime="2019-06-08T14:33:01.307Z" itemprop="datePublished">2019-06-08</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="计网"><a href="#计网" class="headerlink" title="计网"></a>计网</h1><h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><h2 id="第三章"><a href="#第三章" class="headerlink" title="第三章"></a>第三章</h2><h2 id="第四章"><a href="#第四章" class="headerlink" title="第四章"></a>第四章</h2><h2 id="第五章-运输层"><a href="#第五章-运输层" class="headerlink" title="第五章 运输层"></a>第五章 运输层</h2><h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><h4 id="进程间通信"><a href="#进程间通信" class="headerlink" title="进程间通信"></a>进程间通信</h4><p>运输层的一个很重要的功能就是 ‘复用’ 和 ‘分用’ 。应用层不同进程的报文通过不同的端口向下交到运输层，再往下就共用网络层提供的服务。</p>
+<p>两个主机进行通信实际上就是两个主机中的应用进程互相通信。 </p>
+<p>应用进程之间的通信又称为端到端的通信。 </p>
+<p>“运输层提供应用进程间的逻辑通信”。</p>
+<h4 id="两个主要协议"><a href="#两个主要协议" class="headerlink" title="两个主要协议"></a>两个主要协议</h4><p> 用户数据报协议UDP 一条不可靠信道</p>
+<p> 传输控制协议TCP 全双工的可靠信道</p>
+<h4 id="端口"><a href="#端口" class="headerlink" title="端口"></a>端口</h4><p>IP地址+端口号——唯一标识进程</p>
+<p>三类端口<br>1熟知端口<br>2登记端口号——在IANA登记<br>3客户端口号或短暂端口号</p>
+<h3 id="UDP详解"><a href="#UDP详解" class="headerlink" title="UDP详解"></a>UDP详解</h3><h4 id="主要特点"><a href="#主要特点" class="headerlink" title="主要特点"></a>主要特点</h4><p>UDP 是无连接的，即发送数据之前不需要建立连接。</p>
+<p>UDP 使用尽最大努力交付，即不保证可靠交付，同时也不使用拥塞控制。</p>
+<p>UDP 是面向报文的。</p>
+<p>UDP 没有拥塞控制，很适合多媒体通信的要求。</p>
+<p>UDP 的首部开销小，只有 8 个字节。</p>
+<h4 id="UDP首部"><a href="#UDP首部" class="headerlink" title="UDP首部"></a>UDP首部</h4><p>用户数据报 UDP 有两个字段：数据字段和首部字段。首部字段有 8 个字节，由 4 个字段组成，每个字段都是两个字节。<br>在计算检验和时，临时把“伪首部”和 UDP 用户数据报连接在一起。伪首部仅仅是为了计算检验和。</p>
+<p>UDP检验和是一个端到端的检验和。它由发送端计算，然后由接收端验证。其目的是为了发现UDP首部和数据在发送端到接收端之间发生的任何改动。</p>
+<h3 id="TCP详解"><a href="#TCP详解" class="headerlink" title="TCP详解"></a>TCP详解</h3><h4 id="主要特点-1"><a href="#主要特点-1" class="headerlink" title="主要特点"></a>主要特点</h4><p>TCP 是面向连接的运输层协议。</p>
+<p>每一条 TCP 连接只能有两个端点(endpoint)，每一条 TCP 连接只能是点对点的（一对一）。 </p>
+<p>TCP 提供可靠交付的服务。</p>
+<p>TCP 提供全双工通信。</p>
+<h4 id="套接字"><a href="#套接字" class="headerlink" title="套接字"></a>套接字</h4><p>TCP 把连接作为最基本的抽象。<br>每一条 TCP 连接有两个端点。<br>TCP 连接的端点不是主机，不是主机的IP 地址，不是应用进程，也不是运输层的协议端口。TCP 连接的端点叫做套接字(socket)或插口。<br>端口号拼接到(contatenated with) IP 地址即构成了套接字。</p>
+<p>TCP 连接 ::= {socket1, socket2}<br>             = {(IP1: port1), (IP2: port2)} </p>
+<h4 id="TCP报文段首部"><a href="#TCP报文段首部" class="headerlink" title="TCP报文段首部"></a>TCP报文段首部</h4><h3 id="可靠传输工作原理"><a href="#可靠传输工作原理" class="headerlink" title="可靠传输工作原理"></a>可靠传输工作原理</h3><h4 id="停止等待协议（注意点和几种情况P214）"><a href="#停止等待协议（注意点和几种情况P214）" class="headerlink" title="停止等待协议（注意点和几种情况P214）"></a>停止等待协议（注意点和几种情况P214）</h4><p>在发送完一个分组后，必须暂时保留已发送的分组的副本。</p>
+<p>分组和确认分组都必须进行编号。</p>
+<p>超时计时器的重传时间应当比数据在分组传输的平均往返时间更长一些。</p>
+<h4 id="ARQ"><a href="#ARQ" class="headerlink" title="ARQ"></a>ARQ</h4><p>o 累积确认：对按序到达的最后一个分组发送确认</p>
+<p>表示：到这个分组为止的所有分组都已正确收到了</p>
+<p>优点：易实现，即使确认丢失也不必重传</p>
+<p>缺点：不能向发送方反映出接收方已正确收到所有分组的信息</p>
+<p>o Go-back-N(回退N)</p>
+<p>需要再退回来重传已发过的N个分组[发了前5个，第3个丢失，回到第2个进行重传</p>
+<p>o当通信线路质量不好时，连续ARQ协议会带来负面影响</p>
+<h2 id="第六章"><a href="#第六章" class="headerlink" title="第六章"></a>第六章</h2>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-20190504" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2019/05/04/20190504/" class="article-date">
+      <time datetime="2019-05-03T16:09:38.007Z" itemprop="datePublished">2019-05-04</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="20190504总结"><a href="#20190504总结" class="headerlink" title="20190504总结"></a>20190504总结</h1><h2 id="JAVA-WEB-开始"><a href="#JAVA-WEB-开始" class="headerlink" title="JAVA WEB 开始"></a>JAVA WEB 开始</h2><p>看了一些JAVA编程基础</p>
+<h2 id="继续补WP"><a href="#继续补WP" class="headerlink" title="继续补WP"></a>继续补WP</h2><p>补了DDCTF部分WP见其他笔记</p>
+<h2 id="继续做ISCC"><a href="#继续做ISCC" class="headerlink" title="继续做ISCC"></a>继续做ISCC</h2><p>键盘记录的MISC没有脚本还是比较头秃，慢慢找个脚本</p>
+<h2 id="MSF环境"><a href="#MSF环境" class="headerlink" title="MSF环境"></a>MSF环境</h2><h3 id="虚拟机配置基础理解"><a href="#虚拟机配置基础理解" class="headerlink" title="虚拟机配置基础理解"></a>虚拟机配置基础理解</h3><p>桥接模式：虚拟机看作独立机器，跟局域网其他主机都可以相互访问</p>
+<p>NET模式：虚拟机通过主机连接访问网络（因此虚拟机可访问局域网其他主机而其他不能访问虚拟机）</p>
+<p>HOST-ONLY模式</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-6" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2019/04/25/6/" class="article-date">
+      <time datetime="2019-04-25T10:20:09.097Z" itemprop="datePublished">2019-04-25</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="今日有感"><a href="#今日有感" class="headerlink" title="今日有感"></a>今日有感</h1><p>失败完完全全是生活的一部分，所以忍耐也是，蓄力也是。表面上得到的顺风顺水，背地里也可能栽够了跟头。所以我是要确保自己输得起，坦然面对不足，输了还有勇气力气去赢。</p>
+<p>以及，轻装上阵，我的生活只属于我自己，不是父母的缩影继续，不是同事的背景映衬，不是任何其他人以为的样子，所以也不用把自己变成其他人希望的什么人，只追寻自己想要的，从自己的内心给自己足够的动力。</p>
+<p>与人交往是互惠互利的，不需要单方面给予，也不要单方面索求，以此来建立良好的关系。同时不要多余的担心得罪某人，不怀揣着恶意目的，没有多余不正当的言论，按照自己的准则处事，不必在意别人目光。若有小人也不必过分介怀，即使你不去招惹他，涉及利益冲突，也可能会有交锋，所以兵来将挡水来土掩。不断提升自己，是唯一能做的事。</p>
+<p>还有睁开眼睛去做事（不要盲人摸象）即提前准备看清楚</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-5" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2019/04/22/5/" class="article-date">
+      <time datetime="2019-04-22T11:26:38.303Z" itemprop="datePublished">2019-04-22</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="PYTHON-WEB安全学习"><a href="#PYTHON-WEB安全学习" class="headerlink" title="PYTHON WEB安全学习"></a>PYTHON WEB安全学习</h1><h3 id="1-在python中，object类是Python中所有类的基类，如果定义一个类时没有指定继承哪个类，则默认继承object类。"><a href="#1-在python中，object类是Python中所有类的基类，如果定义一个类时没有指定继承哪个类，则默认继承object类。" class="headerlink" title="1_在python中，object类是Python中所有类的基类，如果定义一个类时没有指定继承哪个类，则默认继承object类。`"></a>1_在python中，object类是Python中所有类的基类，如果定义一个类时没有指定继承哪个类，则默认继承object类。<code>`</code></h3><p>2_在python中，每个类都有一个bases属性，列出其基类。</p>
+<p>3_subclasses() 这个方法返回的是这个类的子类的集合</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-4" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2019/04/21/4/" class="article-date">
+      <time datetime="2019-04-20T16:23:03.742Z" itemprop="datePublished">2019-04-21</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="国赛WP"><a href="#国赛WP" class="headerlink" title="国赛WP"></a>国赛WP</h1><h2 id="WEB1"><a href="#WEB1" class="headerlink" title="WEB1"></a>WEB1</h2><h2 id="WEB2"><a href="#WEB2" class="headerlink" title="WEB2"></a>WEB2</h2><h2 id="MISC3"><a href="#MISC3" class="headerlink" title="MISC3"></a>MISC3</h2>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-3" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2019/04/15/3/" class="article-date">
+      <time datetime="2019-04-14T16:00:02.528Z" itemprop="datePublished">2019-04-15</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="DDctf记录"><a href="#DDctf记录" class="headerlink" title="DDctf记录"></a>DDctf记录</h1><p>到最后完整完成的只有2道题</p>
+<h2 id="第一道WEB"><a href="#第一道WEB" class="headerlink" title="第一道WEB"></a>第一道WEB</h2><h2 id="第二道WEB"><a href="#第二道WEB" class="headerlink" title="第二道WEB"></a>第二道WEB</h2><p>结束之后复现其他的WEB题目</p>
+<h2 id="第三道WEB"><a href="#第三道WEB" class="headerlink" title="第三道WEB"></a>第三道WEB</h2>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-2" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2019/04/13/2/" class="article-date">
+      <time datetime="2019-04-13T14:08:10.887Z" itemprop="datePublished">2019-04-13</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="记录XSS相关编码理解"><a href="#记录XSS相关编码理解" class="headerlink" title="记录XSS相关编码理解"></a>记录XSS相关编码理解</h1>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-1" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2019/04/09/1/" class="article-date">
+      <time datetime="2019-04-09T08:43:02.264Z" itemprop="datePublished">2019-04-09</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="复现题目"><a href="#复现题目" class="headerlink" title="复现题目"></a>复现题目</h1><p>这里记录一下之前复现的两道题相关知识点</p>
+<h2 id="SOAP反序列化"><a href="#SOAP反序列化" class="headerlink" title="SOAP反序列化"></a>SOAP反序列化</h2><p>来自LCTF2018</p>
+<h3 id="基础知识："><a href="#基础知识：" class="headerlink" title="基础知识："></a>基础知识：</h3><p>SOAP协议:SOAP 是一种简单的基于 XML 的协议，它使应用程序通过 HTTP 来交换信息。开启SOAP服务后可在phpinfo页面显示，在soap服务开启后soapclient就变成了php的内置类他的默认方法中包括<br><code>public __call ( string $function_name , array $arguments ) : mixed</code>魔术方法，可在类调用不存在的方法时自动调用</p>
+<p>soapclint用法如下<br><code>$client     = new SoapClient($url, array(&quot;trace&quot; =&gt; 1, &quot;exception&quot; =&gt; 0));</code><br>第一个参数为目标URL,第二个参数为一个数组，介绍如下<br><code>(mixed $wsdl [,array $options])</code></p>
+<p>$option中包括execute_data,location,uri等参数，如果传入的第一个参数为$wsdl，这个参数控制是否为wsdl模式，若为wsdl模式，则在序列化之前就回对$url进行请求，如果值为NULL即非wsdl模式反序列化时就会对option中的uri进行远程soap请求。</p>
+<p>e.g<br><code>&lt;?php
+$a = new SoapClient(null, array(&#39;location&#39; =&gt; &quot;http://123.206.216.198:8887&quot;,
+                                     &#39;uri&#39;      =&gt; &quot;123&quot;));
+echo serialize($a);
+?&gt;</code><br>自己复现注意：两边的服务器都要有SOAP服务才能完成整个过程</p>
+<h2 id="XSSSRF"><a href="#XSSSRF" class="headerlink" title="XSSSRF"></a>XSSSRF</h2>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
+  
 </div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2016-2020 John Doe
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
 
-  <!-- Universal Search -->
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
 
-<script type="text/javascript">
-	var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
-	var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
-	var ALGOLIA_API_KEY = "";
-	var ALGOLIA_APP_ID = "";
-	var ALGOLIA_INDEX_NAME = "";
-  var AZURE_SERVICE_NAME = "";
-  var AZURE_INDEX_NAME = "";
-  var AZURE_QUERY_KEY = "";
-  var BAIDU_API_ID = "";
-  var SEARCH_SERVICE = "hexo";
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+            
+            
+            
+            
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
 </script>
 
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script>window.jQuery || document.write('<script src="/js/jquery.js"><\/script>')</script>
-
-<script src="/js/search.js"></script>
-<script src="/js/app.js"></script>
-
-<!-- Disqus -->
-
-
-
-<!-- Valine -->
-
-
-<!-- Swiftype -->
-<!-- Please replace with your own swiftype settings -->
-<!--
-<script type="text/javascript">
-  /* Swiftype */
-  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
-
-  _st('install','FHMeAyBdVccJECstf-XJ','2.0.0');
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
--->
-
-  <script>document.getElementById("loading-bar").style.width="100%";</script>
+  </div>
 </body>
 </html>
